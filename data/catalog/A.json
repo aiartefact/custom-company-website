@@ -1,0 +1,82 @@
+{"catalog_items":
+[{
+  "id":11,
+  "short_name":"A-1",
+  "name":"Item A-1",
+  "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At blanditiis consequuntur delectus distinctio dolore, dolorum fuga itaque maiores maxime nobis numquam porro rem unde, veniam veritatis. Mollitia perferendis quia veritatis?",
+  "price_retail":null,
+  "price_wholesale":9.0,
+  "amount_retail":null,
+  "amount_wholesale":"5+ pos"
+},
+  {
+    "id":12,
+    "short_name":"A-2",
+    "name":"Item A-2",
+    "description":"Lorem ipsum dolor sit amet.",
+    "price_retail":7.5,
+    "price_wholesale":6.0,
+    "amount_retail":"1+ pos",
+    "amount_wholesale":"5+ pos"
+  },
+  {
+    "id":13,
+    "short_name":"A-3",
+    "name":"Item A-3",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rolorum fuga itaque maiores maxime nobis numquam porro rem unde, veniam veritatis. Mollitia perferendis quia veritatis?",
+    "price_retail":6.5,
+    "price_wholesale":5.0,
+    "amount_retail":"1+ pos",
+    "amount_wholesale":"5+ pos"
+  },
+  {
+    "id":14,
+    "short_name":"A-4",
+    "name":"Item A-4",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus earum eius exercitationem expedita fuga illum ipsam labore magni odit omnis provident repellat, sequi sint totam ullam. At dignissimos doloribus laboriosam necessitatibus odio porro sit ut velit! Asperiores, doloremque dolorum hic inventore labore laudantium modi quibusdam reprehenderit sed soluta. Provident, tempora!",
+    "price_retail":10.0,
+    "price_wholesale":null,
+    "amount_retail":"1+ pos",
+    "amount_wholesale":null
+  },
+  {
+    "id":15,
+    "short_name":"A-5",
+    "name":"Item A-5",
+    "description":"Lorem ipsum dolor sit amet.",
+    "price_retail":4.8,
+    "price_wholesale":3.25,
+    "amount_retail":"1+ pos",
+    "amount_wholesale":"4+ pos"
+  },
+  {
+    "id":16,
+    "short_name":"A-6",
+    "name":"Item A-6",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rolorum fuga itaque maiores maxime nobis numquam porro rem unde, veniam veritatis. Mollitia perferendis quia veritatis?",
+    "price_retail":25.0,
+    "price_wholesale":23.99,
+    "amount_retail":"1+ pos",
+    "amount_wholesale":"8+ pos"
+  },
+  {
+    "id":17,
+    "short_name":"A-7",
+    "name":"Item A-7",
+    "description":"Lorem ipsum dolor sit amet.",
+    "price_retail":16.99,
+    "price_wholesale":15.99,
+    "amount_retail":"1+ pos",
+    "amount_wholesale":"6+ pos"
+  },
+  {
+    "id":18,
+    "short_name":"A-8",
+    "name":"Item A-8",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "price_retail":19.99,
+    "price_wholesale":14.99,
+    "amount_retail":"1+ pos",
+    "amount_wholesale":"8+ pos"
+  }],
+  "category":{"short_name":"A","name":"Category-1","special_instructions":"Some important info 1"}}

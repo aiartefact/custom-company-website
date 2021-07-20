@@ -1,0 +1,42 @@
+{"catalog_items":
+[{
+  "id":61,
+  "short_name":"F-1",
+  "name":"Item F-1",
+  "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus earum eius exercitationem expedita fuga illum ipsam labore magni odit omnis provident repellat, sequi sint totam ullam. At dignissimos doloribus laboriosam necessitatibus odio porro sit ut velit! Asperiores, doloremque dolorum hic inventore labore laudantium modi quibusdam reprehenderit sed soluta. Provident, tempora!",
+  "price_retail":5.99,
+  "price_wholesale":4.99,
+  "amount_retail":"1+ pos",
+  "amount_wholesale":"3+ pos"
+},
+  {
+    "id":62,
+    "short_name":"F-2",
+    "name":"Item F-2",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores consequatur consequuntur, doloremque dolores ea earum eligendi error et expedita explicabo iusto laborum necessitatibus odio quo repellendus vitae. Debitis, fugit!",
+    "price_retail":8.99,
+    "price_wholesale":8.89,
+    "amount_retail":"1+ pos",
+    "amount_wholesale":"6+ pos"
+  },
+  {
+    "id":63,
+    "short_name":"F-3",
+    "name":"Item F-3",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus earum eius exercitationem expedita fuga illum ipsam labore magni odit omnis provident repellat, sequi sint totam ullam. At dignissimos doloribus laboriosam necessitatibus odio porro sit ut velit! Asperiores, doloremque dolorum hic inventore labore laudantium modi quibusdam reprehenderit sed soluta. Provident, tempora!",
+    "price_retail":6.25,
+    "price_wholesale":5.15,
+    "amount_retail":"1+ pos",
+    "amount_wholesale":"7+ pos"
+  },
+  {
+    "id":64,
+    "short_name":"F-4",
+    "name":"Item F-4",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rolorum fuga itaque maiores maxime nobis numquam porro rem unde, veniam veritatis. Mollitia perferendis quia veritatis?",
+    "price_retail":4.99,
+    "price_wholesale":null,
+    "amount_retail":"1+ pos",
+    "amount_wholesale":null
+  }],
+  "category":{"short_name":"F","name":"Category-6","special_instructions":"Some important info 6"}}

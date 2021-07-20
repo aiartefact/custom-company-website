@@ -1,0 +1,84 @@
+[{
+  "id":1,
+  "short_name":"A",
+  "name":"Category-1",
+  "special_instructions":"Some important info 1",
+  "url":"data/catalog/A.json"
+  },
+  {
+    "id":2,
+    "short_name":"B",
+    "name":"Category-2",
+    "special_instructions":"Some important info 2",
+    "url":"data/catalog/B.json"
+  },
+  {
+    "id":3,
+    "short_name":"C",
+    "name":"Category-3",
+    "special_instructions":"Some important info 3",
+    "url":"data/catalog/C.json"
+  },
+  {
+    "id":4,
+    "short_name":"D",
+    "name":"Category-4",
+    "special_instructions":"Some important info 4",
+    "url":"data/catalog/D.json"
+  },
+  {
+    "id":5,
+    "short_name":"E",
+    "name":"Category-5",
+    "special_instructions":"Some important info 5",
+    "url":"data/catalog/E.json"
+  },
+  {
+    "id":6,
+    "short_name":"F",
+    "name":"Category-6",
+    "special_instructions":"Some important info 6",
+    "url":"data/catalog/F.json"
+  },
+  {
+    "id":7,
+    "short_name":"G",
+    "name":"Category-7",
+    "special_instructions":"Some important info 7",
+    "url":"data/catalog/G.json"
+  },
+  {
+    "id":8,
+    "short_name":"H",
+    "name":"Category-8",
+    "special_instructions":"Some important info 8",
+    "url":"data/catalog/H.json"
+  },
+  {
+    "id":9,
+    "short_name":"I",
+    "name":"Category-9",
+    "special_instructions":"Some important info 9",
+    "url":"data/catalog/I.json"
+  },
+  {
+    "id":10,
+    "short_name":"J",
+    "name":"Category-10",
+    "special_instructions":"Some important info 10",
+    "url":"data/catalog/J.json"
+  },
+  {
+    "id":11,
+    "short_name":"K",
+    "name":"Category-11",
+    "special_instructions":"Some important info 11",
+    "url":"data/catalog/K.json"
+  },
+  {
+    "id":12,
+    "short_name":"SP",
+    "name":"Sale",
+    "special_instructions":"Some important info Sale",
+    "url":"data/catalog/SP.json"
+  }]

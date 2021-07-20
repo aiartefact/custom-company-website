@@ -1,0 +1,38 @@
+<div id="main-carousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/Slide-1_1200.png" class="d-block w-100" alt="Slide-1">
+    </div>
+    <div class="carousel-item">
+      <img src="images/Slide-2_1200.png" class="d-block w-100" alt="Slide-2">
+    </div>
+    <div class="carousel-item">
+      <img src="images/Slide-3_1200.png" class="d-block w-100" alt="Slide-3">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#main-carousel"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#main-carousel"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div id="home-tiles" class="row">
+  <div class="col-lg-4 col-md-6 col-12">
+    <a href="#" onclick="$ns.loadCatalogCategories();"><div id="catalog-tile"><span>catalog</span></div></a>
+  </div>
+  <div class="col-lg-4 col-md-6 col-12">
+    <a href="#" onclick="$ns.loadCatalogItems('SP');"><div id="specials-tile"><span>sale</span></div></a>
+  </div>
+  <div class="col-lg-4 col-md-12 col-12">
+    <a href="https://goo.gl/maps/N91hetmP4o6XKr3e6" target="_blank">
+      <div id="map-tile">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.0096443204698!2d24.699002315529256!3d48.91520850465876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c13f11e65933%3A0x872f96ec91343943!2z0J_RgNC40LrQsNGA0L_QsNGC0YHRjNC60LjQuSDQvdCw0YbRltC-0L3QsNC70YzQvdC40Lkg0YPQvdGW0LLQtdGA0YHQuNGC0LXRgiDRltC80LXQvdGWINCS0LDRgdC40LvRjyDQodGC0LXRhNCw0L3QuNC60LA!5e0!3m2!1suk!2sua!4v1615899467565!5m2!1suk!2sua" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <span>map</span>
+      </div>
+    </a>
+  </div>
+</div><!-- End of #home-tiles -->

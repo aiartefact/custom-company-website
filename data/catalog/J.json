@@ -1,0 +1,12 @@
+{"catalog_items":
+[{
+  "id":101,
+  "short_name":"J-1",
+  "name":"Item J-1",
+  "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi commodi consequatur consequuntur cupiditate eius, harum impedit, iusto laborum maiores nesciunt nobis omnis perferendis provident reprehenderit sed suscipit veritatis voluptatum.",
+  "price_retail":7.89,
+  "price_wholesale":7.59,
+  "amount_retail":"1+ pos",
+  "amount_wholesale":"4+ pos"
+}],
+  "category":{"short_name":"J","name":"Category-10","special_instructions":"Some important info 10"}}

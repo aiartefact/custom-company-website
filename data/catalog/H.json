@@ -1,0 +1,52 @@
+{"catalog_items":
+[{
+  "id":81,
+  "short_name":"H-1",
+  "name":"Item H-1",
+  "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus earum eius exercitationem expedita fuga illum ipsam labore magni odit omnis provident repellat, sequi sint totam ullam. At dignissimos doloribus laboriosam necessitatibus odio porro sit ut velit! Asperiores, doloremque dolorum hic inventore labore laudantium modi quibusdam reprehenderit sed soluta. Provident, tempora!",
+  "price_retail":12.99,
+  "price_wholesale":11.99,
+  "amount_retail":"1+ pos",
+  "amount_wholesale":"5+ pos"
+},
+  {
+    "id":82,
+    "short_name":"H-2",
+    "name":"Item H-2",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus earum eius exercitationem expedita fuga illum ipsam labore magni odit omnis provident repellat, sequi sint totam ullam. At dignissimos doloribus laboriosam necessitatibus odio porro sit ut velit! Asperiores, doloremque dolorum hic inventore labore laudantium modi quibusdam reprehenderit sed soluta. Provident, tempora!",
+    "price_retail":15.99,
+    "price_wholesale":13.99,
+    "amount_retail":"1+ pos",
+    "amount_wholesale":"6+ pos"
+  },
+  {
+    "id":83,
+    "short_name":"H-3",
+    "name":"Item H-3",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus earum eius exercitationem expedita fuga illum ipsam labore magni odit omnis provident repellat, sequi sint totam ullam. At dignissimos doloribus laboriosam necessitatibus odio porro sit ut velit! Asperiores, doloremque dolorum hic inventore labore laudantium modi quibusdam reprehenderit sed soluta. Provident, tempora!",
+    "price_retail":11.99,
+    "price_wholesale":10.99,
+    "amount_retail":"1+ pos",
+    "amount_wholesale":"5+ pos"
+  },
+  {
+    "id":84,
+    "short_name":"H-4",
+    "name":"Item H-4",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus earum eius exercitationem expedita fuga illum ipsam labore magni odit omnis provident repellat, sequi sint totam ullam. At dignissimos doloribus laboriosam necessitatibus odio porro sit ut velit! Asperiores, doloremque dolorum hic inventore labore laudantium modi quibusdam reprehenderit sed soluta. Provident, tempora!",
+    "price_retail":12.99,
+    "price_wholesale":null,
+    "amount_retail":"1+ pos",
+    "amount_wholesale":null
+  },
+  {
+    "id":85,
+    "short_name":"H-5",
+    "name":"Item H-5",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus earum eius exercitationem expedita fuga illum ipsam labore magni odit omnis provident repellat, sequi sint totam ullam. At dignissimos doloribus laboriosam necessitatibus odio porro sit ut velit! Asperiores, doloremque dolorum hic inventore labore laudantium modi quibusdam reprehenderit sed soluta. Provident, tempora!",
+    "price_retail":10.99,
+    "price_wholesale":10.75,
+    "amount_retail":"1+ pos",
+    "amount_wholesale":"4+ pos"
+  }],
+  "category":{"short_name":"H","name":"Category-8","special_instructions":"Some important info 8"}}

@@ -1,0 +1,22 @@
+{"catalog_items":
+[{
+  "id":51,
+  "short_name":"E-1",
+  "name":"Item E-1",
+  "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At blanditiis consequuntur delectus distinctio dolore, dolorum fuga itaque maiores maxime nobis numquam porro rem unde, veniam veritatis. Mollitia perferendis quia veritatis?",
+  "price_retail":18.99,
+  "price_wholesale":16.99,
+  "amount_retail":"1+ pos",
+  "amount_wholesale":"5+ pos"
+},
+  {
+    "id":52,
+    "short_name":"E-2",
+    "name":"Item E-2",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores consequatur consequuntur, doloremque dolores ea earum eligendi error et expedita explicabo iusto laborum necessitatibus odio quo repellendus vitae. Debitis, fugit!",
+    "price_retail":5.75,
+    "price_wholesale":5.50,
+    "amount_retail":"1+ pos",
+    "amount_wholesale":"9+ pos"
+  }],
+  "category":{"short_name":"E","name":"Category-5","special_instructions":"Some important info 5"}}

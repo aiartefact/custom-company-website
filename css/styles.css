@@ -1,0 +1,375 @@
+body {
+  font-size: 16px;
+  color: #07485B;
+  background-color: #8EC7D2;
+  font-family: 'Barlow', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #EDE5F4;
+  border: 0;
+}
+
+#logo-img {
+  background: url('../images/Logo_ExtraLarge.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+}
+.navbar-brand h1 { /* Company name */
+  font-family: 'Montserrat', sans-serif;
+  color: #DB073D;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a {
+  text-decoration: none;
+}
+.navbar-brand p { /* Family name */
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+.navbar-brand p span { /* Family logo */
+  vertical-align: middle;
+}
+
+.icons-header { /* icons */
+  font-size: 2rem;
+  /*color: #8EC7D2;*/
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #0D6986;
+  text-align: center;
+}
+#nav-list a:hover {
+  color: #8EC7D2;
+  background: #07485B;
+}
+
+#phone {
+  margin-top: 5px;
+}
+#phone a { /* Phone number */
+  text-align: right;
+  padding-bottom: 0;
+}
+#phone div { /* Contact us */
+  color: #DB073D;
+  text-align: right;
+  padding-right: 15px;
+}
+#phone span, #phone i {
+  font-size: 1.8em;
+}
+
+/* Customizing toggle button */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(7, 72, 91, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: #07485b;
+}
+/* END Customizing toggle button */
+
+#nav-list .nav-item .nav-link.active {
+  color: #8EC7D2;
+  background: #07485B;
+}
+
+/* END HEADER */
+
+/* FOOTER */
+.card-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  color: #8EC7D2;
+  background: #07485B;
+  border-top: 0;
+}
+.card-footer div.row {
+  margin-bottom: 35px;
+}
+#hours, #address {
+  line-height: 2;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+#hours p {
+  color: #EDE5F4;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+.card-footer hr {
+  background-color: #EDE5F4;
+  opacity: 1;
+}
+/* END FOOTER */
+
+/* HOME PAGE */
+#main-content {
+  margin-top: 20px;
+}
+#main-carousel {
+  margin-bottom: 20px;
+}
+
+#catalog-tile, #specials-tile, #map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #07485B;
+  overflow: hidden;
+}
+#catalog-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #07485B;
+}
+
+#catalog-tile {
+  background: url('../images/Catalog-tile.png') no-repeat center;
+}
+#specials-tile {
+  background: url('../images/Specials-tile.png') no-repeat center;
+}
+
+#catalog-tile span, #specials-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+/* END HOME PAGE */
+
+/* CATALOG CATEGORIES PAGE */
+.category-tile {
+  position: relative;
+  border: 2px solid #07485B;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #07485B;
+}
+
+#catalog-categories-title + div {
+  margin-bottom: 50px;
+}
+/* END CATALOG CATEGORIES PAGE */
+
+/* SINGLE CATEGORY PAGE */
+.catalog-item-tile {
+  margin-bottom: 25px;
+}
+.catalog-item-tile .catalog-item-price {
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px; /* bringing up price info */
+  margin-right: -15px;
+}
+.catalog-item-tile .catalog-item-price span {
+  font-size: .6em;
+}
+.catalog-item-photo {
+  position: relative;
+  border: 2px solid #07485B;
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px; /* pushing down the content below e.g. when description is lower than image */
+  max-width: 250px;
+}
+.catalog-item-photo div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #EDE5F4;
+  text-align: center;
+}
+.catalog-item-description {
+  padding-right: 30px;
+}
+h3.catalog-item-title {
+  margin: 0 0 10px;
+}
+.catalog-item-details {
+  font-size: .9em;
+  font-style: italic;
+}
+/* END SINGLE CATEGORY PAGE */
+
+/********** Extra large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/Logo_Large.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 0 5px 0 0;
+  }
+  /* End Header */
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Header */
+  .navbar-brand h1 { /* Company name */
+    padding-top: 10px;
+    font-size: 1.3em;
+  }
+  .navbar-brand p { /* Family name */
+    font-size: .8em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Family logo */
+    height: 20px;
+  }
+  .icons-header { /* icons */
+    font-size: 1.6rem;
+  }
+  #phone span, #phone i {
+    font-size: 1.4em;
+  }
+  /* End Header */
+}
+
+/********** Extra small and small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Company name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Family name */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Family logo */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  .icons-header { /* icons */
+    font-size: 1.4rem;
+    margin-right: 5px;
+  }
+
+  #sm-call {
+    margin-top: 20px;
+  }
+  #call-btn > a {
+    font-size: 1.4em;
+    display: block;
+    margin: 0;
+    padding: 10px;
+    border: 2px solid #07485B;
+    background-color: #EDE5F4;
+    color: #0D6986;
+  }
+  #sm-deliver {
+    margin-top: 5px;
+    font-size: .8em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+
+  /* Footer */
+  .card-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .card-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .card-footer section hr {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  /* End Footer */
+
+  /* Single category */
+  .catalog-item-photo {
+    margin-right: auto;
+  }
+  .catalog-item-tile .catalog-item-price {
+    text-align: center;
+  }
+  .catalog-item-description {
+    margin: 10px auto 0;
+    text-align: center;
+  }
+  .catalog-item-tile hr {
+    background-color: #07485B;
+    opacity: 1;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /* End Single category */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 575px) {
+  /* Header */
+  .navbar-brand h1 { /* Company name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+
+}

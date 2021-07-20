@@ -1,0 +1,42 @@
+{"catalog_items":
+[{
+  "id":91,
+  "short_name":"I-1",
+  "name":"Item I-1",
+  "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus earum eius exercitationem expedita fuga illum ipsam labore magni odit omnis provident repellat, sequi sint totam ullam. At dignissimos doloribus laboriosam necessitatibus odio porro sit ut velit! Asperiores, doloremque dolorum hic inventore labore laudantium modi quibusdam reprehenderit sed soluta. Provident, tempora!",
+  "price_retail":5.99,
+  "price_wholesale":4.99,
+  "amount_retail":"1+ pos",
+  "amount_wholesale":"5+ pos"
+},
+  {
+    "id":92,
+    "short_name":"I-2",
+    "name":"Item I-2",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores consequatur consequuntur, doloremque dolores ea earum eligendi error et expedita explicabo iusto laborum necessitatibus odio quo repellendus vitae. Debitis, fugit!",
+    "price_retail":8.99,
+    "price_wholesale":5.99,
+    "amount_retail":"1+ pos",
+    "amount_wholesale":"7+ pos"
+  },
+  {
+    "id":93,
+    "short_name":"I-3",
+    "name":"Item I-3",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi commodi consequatur consequuntur cupiditate eius, harum impedit, iusto laborum maiores nesciunt nobis omnis perferendis provident reprehenderit sed suscipit veritatis voluptatum.",
+    "price_retail":7.99,
+    "price_wholesale":7.77,
+    "amount_retail":"1+ pos",
+    "amount_wholesale":"7+ pos"
+  },
+  {
+    "id":94,
+    "short_name":"I-4",
+    "name":"Item I-4",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rolorum fuga itaque maiores maxime nobis numquam porro rem unde.",
+    "price_retail":5.50,
+    "price_wholesale":5.25,
+    "amount_retail":"1+ pos",
+    "amount_wholesale":"4+ pos"
+  }],
+  "category":{"short_name":"I","name":"Category-9","special_instructions":"Some important info 9"}}
