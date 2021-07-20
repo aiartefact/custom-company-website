@@ -19,4 +19,4 @@ Website features the following color theme:
   - #0D6986
   - #07485B
 
-The map points to my Alma Mater: [Vasyl Stefanyk Precarpathian National University](https://pnu.edu.ua/) (Ivano-Frankivsk, Ukraine).
+The map on the landing page points to my Alma Mater: [Vasyl Stefanyk Precarpathian National University](https://pnu.edu.ua/) (Ivano-Frankivsk, Ukraine).
