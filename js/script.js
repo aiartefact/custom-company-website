@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded",
               function (event) {
                 var screenWidth = window.innerWidth;
                 if (screenWidth < 768) {
-                  //document.getElementById("collapsable-nav").classList.remove("show");
-                  //let tempCollapse = new bootstrap.Collapse(document.getElementById("collapsable-nav"),{toggle: true});
+                  // document.getElementById("collapsable-nav").classList.remove("show");
+                  // let tempCollapse = new bootstrap.Collapse(document.getElementById("collapsable-nav"),{toggle: true});
                   $("#collapsable-nav").collapse('hide');
                   // document.querySelector("#collapsable-nav").collapse('hide');
                   // document.querySelector("#collapsable-nav").;
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded",
 
 (function (global) {
 
-  var ns = {};
+  var ccw = {};
 
   var homeHtml = "snippets/home-snippet.html";
   var allCategoriesUrl = "data/categories.json";
@@ -41,8 +41,7 @@ document.addEventListener("DOMContentLoaded",
     insertHtml(selector, html);
   };
 
-  // Return substitute of '{{propName}}'
-  // with propValue in given 'string'
+  // Return substitute of '{{propName}}' with propValue in given 'string'
   var insertProperty = function (string, propName, propValue) {
     var propToReplace = "{{" + propName + "}}";
     string = string
@@ -50,46 +49,69 @@ document.addEventListener("DOMContentLoaded",
     return string;
   }
 
-  // Remove the class 'active' from home and switch to Menu button
-  var switchCatalogToActive = function () {
-    // Remove 'active' from home button
-    var classes = document.querySelector("#navHomeButton").className;
+  // Clear the class 'active' from selectedButtonSelector button
+  var removeActiveFromSelectedButton = function (selectedButtonSelector) {
+    var classes = document.querySelector(selectedButtonSelector).className;
     classes = classes.replace(new RegExp("active", "g"), "");
-    document.querySelector("#navHomeButton").className = classes;
+    document.querySelector(selectedButtonSelector).className = classes;
+  };
 
-    // Add 'active' to menu button if not already there
-    classes = document.querySelector("#navCatalogButton").className;
-    if (classes.indexOf("active") == -1) {
-      classes += " active";
-      document.querySelector("#navCatalogButton").className = classes;
+  // Clear the class 'active' from all buttons and
+  // switch to selectedButtonSelector button
+  // If selectedButtonSelector is undefined then
+  // clear the class 'active' from all buttons
+  var switchSelectedToActive = function (selectedButtonSelector) {
+    //Remove 'active' from Home button
+    removeActiveFromSelectedButton("#navHomeButton");
+    //Remove 'active' from Catalog button
+    removeActiveFromSelectedButton("#navCatalogButton");
+    //Remove 'active' from About button
+    removeActiveFromSelectedButton("#navAboutButton");
+    //Remove 'active' from Awards button
+    removeActiveFromSelectedButton("#navAwardsButton");
+
+    // If selectedButtonSelector is not undefined then
+    // add 'active' to selectedButtonSelector button
+    if (selectedButtonSelector !== undefined) {
+      var classes = document.querySelector(selectedButtonSelector).className;
+      if (classes.indexOf("active") === -1) {
+        classes += " active";
+        document.querySelector(selectedButtonSelector).className = classes;
+      }
     }
+  };
+
+  // Load the Home view
+  ccw.loadHomeView = function () {
+    showLoading("#main-content");
+    $ajaxUtils.sendGetRequest(
+        homeHtml,
+        function (responseText) {
+          // Switch CSS class active to Home button
+          switchSelectedToActive("#navHomeButton");
+          document.querySelector("#main-content")
+              .innerHTML = responseText;
+        },
+        false);
   };
 
   // On page load (before images or CSS)
   document.addEventListener("DOMContentLoaded", function (event) {
 
-    // On first load, show home view
-    showLoading("#main-content");
-    $ajaxUtils.sendGetRequest(
-        homeHtml,
-        function (responseText) {
-          document.querySelector("#main-content")
-              .innerHTML = responseText;
-        },
-        false);
+    // On first load, show Home view
+    ccw.loadHomeView();
   });
 
-  // Load the catalog categories view
-  ns.loadCatalogCategories = function () {
+  // Load the Catalog categories view
+  ccw.loadCatalogCategories = function () {
     showLoading("#main-content");
     $ajaxUtils.sendGetRequest(
         allCategoriesUrl,
         buildAndShowCategoriesHTML);
   };
 
-  // Load the catalog items view
-  // 'categoryShort' is a short_name for a category
-  ns.loadCatalogItems = function (categoryShort) {
+  // Load the Catalog items view 'categoryShort' is a short_name for a category
+  ccw.loadCatalogItems = function (categoryShort) {
     showLoading("#main-content");
     $ajaxUtils.sendGetRequest(
         catalogItemsUrl + categoryShort + ".json",
@@ -97,8 +119,7 @@ document.addEventListener("DOMContentLoaded",
   };
 
 
-  // Builds HTML for the categories page based on the data
-  // from the server
+  // Builds HTML for the categories page based on the data from the server
   function buildAndShowCategoriesHTML (categories) {
     // Load title snippet of categories page
     $ajaxUtils.sendGetRequest(
@@ -108,8 +129,8 @@ document.addEventListener("DOMContentLoaded",
           $ajaxUtils.sendGetRequest(
               categoryHtml,
               function (categoryHtml) {
-                // Switch CSS class active to menu button
-                switchCatalogToActive();
+                // Switch CSS class active to Catalog button
+                switchSelectedToActive("#navCatalogButton");
 
                 var categoriesViewHtml =
                     buildCategoriesViewHtml(categories,
@@ -154,16 +175,16 @@ document.addEventListener("DOMContentLoaded",
   // Builds HTML for the single category page based on the data
   // from the server
   function buildAndShowCatalogItemsHTML (categoryCatalogItems) {
-    // Load title snippet of catalog items page
+    // Load title snippet of Catalog items page
     $ajaxUtils.sendGetRequest(
         catalogItemsTitleHtml,
         function (catalogItemsTitleHtml) {
-          // Retrieve single catalog item snippet
+          // Retrieve single Catalog item snippet
           $ajaxUtils.sendGetRequest(
               catalogItemHtml,
               function (catalogItemHtml) {
-                // Switch CSS class active to menu button
-                switchCatalogToActive();
+                // Switch CSS class active to Catalog button
+                switchSelectedToActive();
 
                 var catalogItemsViewHtml =
                     buildCatalogItemsViewHtml(categoryCatalogItems,
@@ -177,8 +198,8 @@ document.addEventListener("DOMContentLoaded",
   }
 
 
-  // Using category and catalog items data and snippets html
-  // build catalog items view HTML to be inserted into page
+  // Using category and Catalog items data and snippets html
+  // build Catalog items view HTML to be inserted into page
   function buildCatalogItemsViewHtml(categoryCatalogItems,
                                      catalogItemsTitleHtml,
                                      catalogItemHtml) {
@@ -195,11 +216,11 @@ document.addEventListener("DOMContentLoaded",
     var finalHtml = catalogItemsTitleHtml;
     finalHtml += "<section class='row'>";
 
-    // Loop over catalog items
+    // Loop over Catalog items
     var catalogItems = categoryCatalogItems.catalog_items;
     var catShortName = categoryCatalogItems.category.short_name;
     for (var i = 0; i < catalogItems.length; i++) {
-      // Insert catalog item values
+      // Insert Catalog item values
       var html = catalogItemHtml;
       html =
           insertProperty(html, "short_name", catalogItems[i].short_name);
@@ -270,6 +291,6 @@ document.addEventListener("DOMContentLoaded",
   }
 
 
-  global.$ns = ns;
+  global.$ccw = ccw;
 
 })(window);

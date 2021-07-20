@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>New Site</title>
+  <title>Custom Company Website</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-icons.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -19,12 +19,12 @@
 
         <div class="navbar-brand d-flex">
 
-          <a href="index.html" class="d-none d-lg-block">
+          <a href="#" onclick="$ccw.loadHomeView();" class="d-none d-lg-block">
             <div id="logo-img"></div>
           </a>
 
           <div class="flex-column align-self-center">
-            <a href="index.html"><h1>Custom company</h1></a>
+            <a href="#" onclick="$ccw.loadHomeView();"><h1>Custom company</h1></a>
             <p>
               <img src="images/SubLogo.png" alt="Family Logo">
               <span>Custom family</span>
@@ -41,22 +41,22 @@
         <div class="collapse navbar-collapse" id="collapsable-nav">
           <ul id="nav-list" class="navbar-nav navbar-nav-scroll ms-auto">
             <li class="nav-item d-block d-md-none">
-              <a id="navHomeButton" class="nav-link active" aria-current="page" href="index.html">
+              <a id="navHomeButton" class="nav-link active" aria-current="page" href="#" onclick="$ccw.loadHomeView();">
                 <i class="bi-house-fill icons-header"></i>
                 <br class="d-none d-md-block"> Home</a>
             </li>
             <li class="nav-item">
-              <a id="navCatalogButton" class="nav-link" href="#" onclick="$ns.loadCatalogCategories();">
+              <a id="navCatalogButton" class="nav-link" href="#" onclick="$ccw.loadCatalogCategories();">
                 <i class="bi-bag-fill icons-header"></i>
                 <br class="d-none d-md-block"> Catalog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a id="navAboutButton" class="nav-link" href="#">
                 <i class="bi-info-circle-fill icons-header"></i>
                 <br class="d-none d-md-block"> About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a id="navAwardsButton" class="nav-link" href="#">
                 <i class="bi-award-fill icons-header"></i>
                 <br class="d-none d-md-block"> Awards</a>
             </li>
