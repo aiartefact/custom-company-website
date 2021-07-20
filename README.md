@@ -1,5 +1,5 @@
 # custom-company-website
-A simple website for learning and demonstration purposes inspired by the "HTML, CSS, and Javascript for Web Developers" course by Johns Hopkins University on Coursera.
+A simple website for learning and demonstration purposes inspired by the "HTML, CSS, and Javascript for Web Developers" course by Johns Hopkins University on [Coursera](https://www.coursera.org/learn/html-css-javascript-for-web-developers).<br />
 This website was created with:
   - HTML
   - CSS
@@ -7,9 +7,11 @@ This website was created with:
   - Bootstrap 5.0.1
   - jquery 3.6.0
   - ajax
-It is fully adaptive and implements the SPA paradigm.
-Back-end part was replaced with static .json files.
+
+It is fully adaptive and implements the SPA paradigm.<br />
+Back-end part was replaced with static .json files.<br />
 All placeholder images were created with https://place-hold.it/.
+
 Website features the following color theme:
   - #DB073D
   - #EDE5F4
