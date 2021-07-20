@@ -9,7 +9,7 @@ This website was created with:
   - ajax
 
 It is fully adaptive and implements the SPA paradigm.<br />
-Back-end part was replaced with static .json files.<br />
+Back-end part was replaced with the static .json files.<br />
 All placeholder images were created with https://place-hold.it/.
 
 Website features the following color theme:

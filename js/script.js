@@ -246,7 +246,7 @@ document.addEventListener("DOMContentLoaded",
                            priceValue) {
     // If not specified, replace with empty string
     if (!priceValue) {
-      return insertProperty(html, pricePropName, "");;
+      return insertProperty(html, pricePropName, "");
     }
 
     priceValue = "$" + priceValue.toFixed(2);
