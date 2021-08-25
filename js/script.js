@@ -27,6 +27,10 @@ document.addEventListener("DOMContentLoaded",
   var catalogItemsUrl = "data/catalog/";
   var catalogItemsTitleHtml = "snippets/catalog-items-title.html";
   var catalogItemHtml = "snippets/catalog-item.html";
+  var awardsUrl = "data/awards.json";
+  var awardsTitleHtml = "snippets/awards-title-snippet.html";
+  var awardsFooterHtml = "snippets/awards-footer-snippet.html";
+  var awardHtml = "snippets/awards-item.html";
 
   // Convenience function for inserting innerHTML for 'select'
   var insertHtml = function (selector, html) {
@@ -117,6 +121,16 @@ document.addEventListener("DOMContentLoaded",
         catalogItemsUrl + categoryShort + ".json",
         buildAndShowCatalogItemsHTML);
   };
+
+  // Load the Awards view
+  ccw.loadAwardsItems = function () {
+    showLoading("#main-content");
+    $ajaxUtils.sendGetRequest(
+        awardsUrl,
+        buildAndShowAwardsItemsHTML);
+  };
+
+  // TODO: About view similar to loadHomeView
 
 
   // Builds HTML for the categories page based on the data from the server
@@ -288,6 +302,71 @@ document.addEventListener("DOMContentLoaded",
     amountValue = "(" + amountValue + ")";
     html = insertProperty(html, amountPropName, amountValue);
     return html;
+  }
+
+  // Builds HTML for the awards page based on the data from the server
+  function buildAndShowAwardsItemsHTML (awards) {
+    // Load title snippet of Awards page
+    $ajaxUtils.sendGetRequest(
+        awardsTitleHtml,
+        function (awardsTitleHtml) {
+          // Load footer snippet of Awards page
+          $ajaxUtils.sendGetRequest(
+            awardsFooterHtml,
+              function (awardsFooterHtml) {
+                // Retrieve single awards snippet
+                $ajaxUtils.sendGetRequest(
+                    awardHtml,
+                    function (awardHtml) {
+                      // Switch CSS class active to Awards button
+                      switchSelectedToActive("#navAwardsButton");
+
+                      var awardsViewHtml =
+                          buildAwardsViewHtml(awards,
+                              awardsTitleHtml,
+                              awardsFooterHtml,
+                              awardHtml);
+                      insertHtml("#main-content", awardsViewHtml);
+                    },
+                false);
+              },
+          false);
+        },
+        false);
+  }
+
+  // Using awards data and snippets html
+  // build awards view HTML to be inserted into page
+  function buildAwardsViewHtml(awards,
+                               awardsTitleHtml,
+                               awardsFooterHtml,
+                               awardHtml) {
+
+    var finalHtml = awardsTitleHtml;
+    finalHtml += "<section class='row'>";
+
+    // Loop over awards
+    for (var i = 0; i < awards.length; i++) {
+      // Insert awards values
+      var html = awardHtml;
+      // TODO: odd award display (to the left) and even award display (to the right)
+      // TODO: styles for awards with separate classes ("More to come" with italic)
+      var name = "" + awards[i].name;
+      var description = awards[i].description;
+      html =
+          insertProperty(html,
+              "name",
+              name);
+      html =
+          insertProperty(html,
+              "description",
+              description);
+      finalHtml += html;
+    }
+
+    finalHtml += "</section>";
+    finalHtml += awardsFooterHtml;
+    return finalHtml;
   }
 
 
