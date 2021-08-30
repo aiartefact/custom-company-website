@@ -240,6 +240,47 @@ h3.catalog-item-title {
 }
 /* END SINGLE CATEGORY PAGE */
 
+/* AWARDS PAGE */
+.awards-item-tile {
+  margin-bottom: 25px;
+}
+.awards-item-photo {
+  border: 2px solid #07485B;
+  overflow: hidden;
+  padding: 0;
+  margin-bottom: 20px; /* pushing down the content below e.g. when description is lower than image */
+  max-width: 250px;
+}
+.awards-item-odd-photo {
+  margin-right: -10px;
+  margin-left: 150px;
+}
+.awards-item-even-photo {
+  margin-right: 150px;
+  margin-left: -10px;
+}
+.awards-item-odd-description {
+  padding-right: 160px;
+}
+.awards-item-even-description {
+  padding-left: 160px;
+}
+h3.awards-item-title {
+  margin: 0 0 10px;
+}
+.awards-item-details {
+  font-size: .9em;
+  font-style: italic;
+}
+#awards-items-title {
+  margin-bottom: 50px;
+}
+#awards-items-footer {
+  font-size: 1.1em;
+  font-style: italic;
+}
+/* END AWARDS PAGE */
+
 /********** Extra large devices only **********/
 @media (min-width: 1200px) {
 
