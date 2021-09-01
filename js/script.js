@@ -1,17 +1,15 @@
 document.addEventListener("DOMContentLoaded",
     function () {
 
+      const menuToggle = document.getElementById('collapsable-nav');
+      const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false});
+
       document.querySelector(".navbar-toggler")
           .addEventListener("blur",
               function (event) {
                 var screenWidth = window.innerWidth;
                 if (screenWidth < 768) {
-                  // document.getElementById("collapsable-nav").classList.remove("show");
-                  // let tempCollapse = new bootstrap.Collapse(document.getElementById("collapsable-nav"),{toggle: true});
-                  $("#collapsable-nav").collapse('hide');
-                  // document.querySelector("#collapsable-nav").collapse('hide');
-                  // document.querySelector("#collapsable-nav").;
-                  // console.log(Object.getOwnPropertyNames(document.querySelector("#collapsable-nav")));
+                    bsCollapse.toggle();
                 }
               });
     });
@@ -32,6 +30,7 @@ document.addEventListener("DOMContentLoaded",
   var awardsFooterHtml = "snippets/awards-footer-snippet.html";
   var awardHtmlOdd = "snippets/awards-item-odd.html";
   var awardHtmlEven = "snippets/awards-item-even.html";
+  var aboutHtml = "snippets/about-snippet.html";
 
   // Convenience function for inserting innerHTML for 'select'
   var insertHtml = function (selector, html) {
@@ -131,7 +130,19 @@ document.addEventListener("DOMContentLoaded",
         buildAndShowAwardsItemsHTML);
   };
 
-  // TODO: About view similar to loadHomeView
+  // Load the About view
+  ccw.loadAboutView = function () {
+    showLoading("#main-content");
+    $ajaxUtils.sendGetRequest(
+        aboutHtml,
+        function (responseText) {
+          // Switch CSS class active to About button
+          switchSelectedToActive("#navAboutButton");
+          document.querySelector("#main-content")
+              .innerHTML = responseText;
+        },
+        false);
+  };
 
 
   // Builds HTML for the categories page based on the data from the server
@@ -366,7 +377,6 @@ document.addEventListener("DOMContentLoaded",
       else {
         html = awardHtmlEven;
       }
-      // TODO: styles for awards with separate classes ("More to come" with italic)
       var name = "" + awards[i].name;
       var description = awards[i].description;
       html =

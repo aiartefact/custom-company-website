@@ -281,6 +281,27 @@ h3.awards-item-title {
 }
 /* END AWARDS PAGE */
 
+/* ABOUT PAGE */
+#about-view-title {
+  margin-bottom: 30px;
+}
+#about-view a {
+  color: #07485B;
+  text-decoration: underline;
+}
+#about-view p, #about-view li {
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+#about-view ul {
+  margin: -30px 0 30px;
+}
+#about-view li {
+  margin-bottom: 0;
+}
+/* END ABOUT PAGE */
+
 /********** Extra large devices only **********/
 @media (min-width: 1200px) {
 
@@ -296,6 +317,23 @@ h3.awards-item-title {
     margin: 0 5px 0 0;
   }
   /* End Header */
+
+  /* AWARDS PAGE */
+  .awards-item-odd-photo {
+    margin-right: -10px;
+    margin-left: 100px;
+  }
+  .awards-item-even-photo {
+    margin-right: 100px;
+    margin-left: -10px;
+  }
+  .awards-item-odd-description {
+    padding-right: 110px;
+  }
+  .awards-item-even-description {
+    padding-left: 110px;
+  }
+  /* END AWARDS PAGE */
 }
 
 /********** Medium devices only **********/
@@ -319,6 +357,23 @@ h3.awards-item-title {
     font-size: 1.4em;
   }
   /* End Header */
+
+  /* AWARDS PAGE */
+  .awards-item-odd-photo {
+    margin-right: -10px;
+    margin-left: 0;
+  }
+  .awards-item-even-photo {
+    margin-right: 0;
+    margin-left: -10px;
+  }
+  .awards-item-odd-description {
+    padding-right: 10px;
+  }
+  .awards-item-even-description {
+    padding-left: 10px;
+  }
+  /* END AWARDS PAGE */
 }
 
 /********** Extra small and small devices only **********/
@@ -402,6 +457,41 @@ h3.awards-item-title {
   }
 
   /* End Single category */
+
+  /* AWARDS PAGE */
+  .awards-item-tile {
+    margin-bottom: 25px;
+  }
+  .awards-item-photo {
+    border: 2px solid #07485B;
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: 20px; /* pushing down the content below e.g. when description is lower than image */
+    max-width: 250px;
+  }
+  .awards-item-odd-photo {
+    margin: 0 auto 20px;
+  }
+  .awards-item-even-photo {
+    margin: 0 auto 20px;
+  }
+  .awards-item-odd-description {
+    padding: 0 15px 0;
+  }
+  .awards-item-even-description {
+    padding: 0 15px 0;
+  }
+  #awards-items-title {
+    margin-bottom: 30px;
+  }
+  .awards-item-tile hr {
+    background-color: #07485B;
+    opacity: 1;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  /* END AWARDS PAGE */
 }
 
 /********** Extra small devices only **********/

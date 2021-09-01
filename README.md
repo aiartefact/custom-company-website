@@ -5,7 +5,6 @@ This website was created with:
   - CSS
   - JavaScript
   - Bootstrap 5.0.1
-  - jquery 3.6.0
   - ajax
 
 It is fully adaptive and implements the SPA paradigm.<br />
@@ -19,4 +18,4 @@ Website features the following color theme:
   - #0D6986
   - #07485B
 
-The map on the landing page points to my Alma Mater: [Vasyl Stefanyk Precarpathian National University](https://pnu.edu.ua/) (Ivano-Frankivsk, Ukraine).
+The map on the landing page points to the author's Alma Mater: [Vasyl Stefanyk Precarpathian National University](https://pnu.edu.ua/) (Ivano-Frankivsk, Ukraine).

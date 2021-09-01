@@ -41,22 +41,22 @@
         <div class="collapse navbar-collapse" id="collapsable-nav">
           <ul id="nav-list" class="navbar-nav navbar-nav-scroll ms-auto">
             <li class="nav-item d-block d-md-none">
-              <a id="navHomeButton" class="nav-link active" aria-current="page" href="#" onclick="$ccw.loadHomeView();">
+              <a id="navHomeButton" class="nav-link active" data-bs-toggle="collapse" data-bs-target="#collapsable-nav.show" aria-current="page" href="#" onclick="$ccw.loadHomeView();">
                 <i class="bi-house-fill icons-header"></i>
                 <br class="d-none d-md-block"> Home</a>
             </li>
             <li class="nav-item">
-              <a id="navCatalogButton" class="nav-link" href="#" onclick="$ccw.loadCatalogCategories();">
+              <a id="navCatalogButton" class="nav-link" data-bs-toggle="collapse" data-bs-target="#collapsable-nav.show" href="#" onclick="$ccw.loadCatalogCategories();">
                 <i class="bi-bag-fill icons-header"></i>
                 <br class="d-none d-md-block"> Catalog</a>
             </li>
             <li class="nav-item">
-              <a id="navAboutButton" class="nav-link" href="#">
+              <a id="navAboutButton" class="nav-link" data-bs-toggle="collapse" data-bs-target="#collapsable-nav.show" href="#" onclick="$ccw.loadAboutView();">
                 <i class="bi-info-circle-fill icons-header"></i>
                 <br class="d-none d-md-block"> About</a>
             </li>
             <li class="nav-item">
-              <a id="navAwardsButton" class="nav-link" href="#" onclick="$ccw.loadAwardsItems();">
+              <a id="navAwardsButton" class="nav-link" data-bs-toggle="collapse" data-bs-target="#collapsable-nav.show" href="#" onclick="$ccw.loadAwardsItems();">
                 <i class="bi-award-fill icons-header"></i>
                 <br class="d-none d-md-block"> Awards</a>
             </li>
@@ -104,7 +104,7 @@
           <hr class="d-block d-md-none">
         </section>
         <section id="testimonials" class="col-md-4">
-          <p>"The best Custom company I ever seen! Awesome!"</p>
+          <p>"The best Custom company I've ever seen! Awesome!"</p>
           <p>"Amazing catalog! Great service! I'll recommend it to all my friends and colleges!"</p>
         </section>
       </div>
@@ -112,8 +112,6 @@
     </div>
   </footer>
 
-  <!--  <script src="bootstrap-5.0.0-beta2-dist/js/bootstrap.bundle.js"></script>-->
-  <script src="js/jquery-3.6.0.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/ajax-utils.js"></script>
   <script src="js/script.js"></script>
